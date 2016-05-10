@@ -1,0 +1,73 @@
+@charset "UTF-8";
+html{ 
+	font-family: Helvetica, Arial, sans-serif;
+    line-height:1.5;
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+            box-sizing:border-box;
+	height:100%
+	}
+*, *:before, *:after{
+    -webkit-box-sizing:inherit;
+       -moz-box-sizing:inherit;
+            box-sizing:inherit;
+	-webkit-text-size-adjust:none;
+	}
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Poiret One', cursive; text-align:center; font-weight:bold; font-size:18.5px
+	}
+/* TYPOGRAPHY */
+
+.main{background:url("../images/paint.jpg") no-repeat center center; background-size:cover; left:0; top:0; width:100%; min-height:100vh; z-index:-1;}
+.brand{width:10%; height:25%; padding-top:1em; margin-left:auto; margin-right:auto}
+h3{font-size:30px}
+.explore a{text-decoration:none; color:black}
+.explore a:hover{color:red; transition:ease .3s}
+
+.bio{text-align:justify; width:40%; margin-left:auto; margin-right:auto}
+.like{padding-left:6em;float:left}
+.dislike{float:right; padding-right:5em}
+.like, .dislike{text-align:left; padding-top:5em}
+
+.aboutportfolio{text-align:justify; width:40%; margin-left:auto; margin-right:auto}
+.link {text-decoration:none; color:black; font-size:21px}
+.link:hover{color:#c50d7c; transition:ease .3s}
+
+.about{color:#007a9c;padding-top:1em}
+.portfolio{color:#c50d7c}
+.projectstitle{color:#05995b}
+.exercisestitle{color:#c24807}
+
+.sites{float:left; overflow-x: auto; overflow-y: hidden; width:100%; white-space:nowrap}
+.sites div{display:inline-block; width:50%; white-space:normal; vertical-align:top; padding-left:4em; 
+padding-right:4em;}
+.description{text-align:justify}
+.sites img{width:50%; height:40%}
+
+.title{font-size:21px; font-weight:bolder}
+
+/* MEDIA QUERIES */
+@media (max-width: 699px){ /* up to 699px wide */
+
+.brand{width:30%; height:45%;}
+.like{display:none}
+.dislike{display:none}
+.bio, .aboutportfolio{width:80%}
+.sites img{width:85%; height:65%}
+.sites div{padding-left:.5em; padding-right:.5em; width:80%}
+
+}
+
+@media (min-width : 700px) and (max-width : 1024px)  /* for iPads in landscape and portrait mode */
+{ 
+
+.brand{width:20%; height:35%;}
+.like{display:none}
+.dislike{display:none}
+.bio, .aboutportfolio{width:70%}
+.sites img{width:75%; height:55%}
+.sites div{padding-left:1em; padding-right:1em}
+
+}
